@@ -1,0 +1,272 @@
+
+  
+/* ========== Global css ========= */
+*{
+  margin: 0;
+  padding: 0;
+}
+.global-btn {
+  width: 110px;
+  height: 40px;
+  background-color: black;
+  color: white;
+}
+
+.global-section {
+  padding: 3rem 0;
+}
+
+.global-heading{
+  font-size: 55px;
+  text-align: center;
+}
+
+.global-head-p {
+  color: #7b7b7b;
+  text-align: center;
+  font-size: 45px;
+}
+
+/*=========== This is header =========*/
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica,sans-serif;
+}
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:gray;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color:brown;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 10px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+
+/* ============ First section ======== */
+
+.first-section{
+  background-image: url(./image/Background-image.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 10 rem 0;
+  text-align: center;
+  height: 450px;
+  font-size: 45px;
+}
+.first-section p {
+  font-size: 3rem;
+  
+}
+
+.first-section h2 {
+  font-size: 5rem;
+  margin: 10px 0;
+}
+
+/*=========== About us section ==========*/
+
+.about-main-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+
+}
+
+.about-sub-div2 {
+width: 600px; 
+font-size: 45px;
+border-image: auto;
+padding: 4px;
+
+}
+
+.about-sub-div2 h2 {
+   font-size: 33px;
+
+}
+
+.about-sub-div2 p {
+  color: #7b7b7b;
+  margin: 15px 0;
+}
+
+/*========== This is service area. ==========*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 4rem;
+}
+
+.grid-single-item {
+  padding: 40px;
+  text-align: center;
+}
+
+.grid-single-item img {
+  width: 110px;
+  height: 110px;
+  border-radius: 40px;
+}
+
+.grid-single-item p {
+color: #7b7b7b;
+}
+
+
+
+
+/*============ work section ============*/
+
+.work-single-img {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  
+}
+
+
+
+/*=============Facebook,Google & Twitter section =============*/
+
+.custom-row {
+  display: flex;
+}
+.custom-row .work-single-item {
+  width: 33%;
+  padding: 40px 20px;
+  text-align: center;
+}
+.work-single-img {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+  display: flex;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+  .testi a {
+    background-color: #04AA6D;
+  }
+}
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 54px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
